@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html lang="cs">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <title>Ukázka HTML verze 4.01</title>
+    <!-- SWFObject objekt pro přidání flash BEGIN-->
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"> </script>
+    <script type="text/javascript">
+        var flashvars = {};
+        var params = { movie: "../video/puppy.flv" };
+        swfobject.embedSWF("flash/osplayer.swf", "video", "400", "320", "8.0.0", flashvars, params);
+
+        var paramsAudio = { mp3: "audio/test-audio.mp3" };
+        swfobject.embedSWF("flash/player_mp3_1.0.0.swf", "audio", "200", "20", "8.0.0", flashvars, paramsAudio);
+    </script>
+    <!-- SWFObject objekt pro přidání flash END-->
+</head>
+<body>
+
+    <div id="video">Video</div>
+    <div id="audio">Audio</div>
+
+
+
+</body>
+</html>

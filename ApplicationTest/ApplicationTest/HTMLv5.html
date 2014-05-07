@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+
+<body>
+
+    <!-- Video formáty a jejich podpora u prohlížečů:
+        H264: IE a Safari
+        WebM: Android, Chrome, Firefox, Opera-->
+    <video poster="images/puppy.jpg"
+           width="400"
+           height="320"
+           preload="auto" controls loop>
+        <source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+        <source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+    </video>
+
+
+    <!-- Audio formáty a jejich podpora u prohlížečů:
+       Ogg Vorbis: Firefox 3.6, Chrome 6+, Opera 1.5, IE9
+        Mp3: Safari 5+, Chrome 6+, IE9 -->
+    <audio controls autoplay>
+        <source src="audio/test-audio.ogg" />
+        <source src="audio/test-audio.mp3" />
+        <p>Prohlížeč nepodporuje dané audio formáty.</p>
+    </audio>
+       
+
+
+</body>
+
+</html>
