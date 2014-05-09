@@ -7,7 +7,7 @@ nav li {
 }
 
 fieldset {
-    width: 400px;
+  
 }
 
 label.error {
@@ -22,8 +22,10 @@ label.error {
     border-bottom: 1px solid #efefef;
     margin: 10px;
     padding-bottom: 10px;
-    width: 260px;
+    width: 400px;
 }
+
+
 
 .title {
     float: left;
@@ -31,4 +33,3 @@ label.error {
     text-align: right;
     padding-right: 10px;
 }
-

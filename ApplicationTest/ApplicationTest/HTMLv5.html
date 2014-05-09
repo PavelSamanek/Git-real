@@ -66,7 +66,8 @@ Ogg Vorbis: Firefox 3.6, Chrome 6+, Opera 1.5, IE9
             </article>
 
             <article class="newInputsHTML5">
-                <form action="" method="post">
+                <h1>Nové HTML5 FORM input typy, elementy a jejich validace</h1>
+                <form action="" method="post" oninput="x.value = rangeID.value()">
                     <div class="inputElement">
                         <label for="email" class="title">Email:</label>
                         <input type="email" name="email" required placeholder="Email">
@@ -75,13 +76,42 @@ Ogg Vorbis: Firefox 3.6, Chrome 6+, Opera 1.5, IE9
                         <label for="website" class="title">URL:</label>
                         <input type="url" name="website" required pattern="https?://.+">
                     </div>
+
                     <div class="inputElement">
-                        <input type="submit" value="Register"
+                        <label for="dateTime" class="title">Datum:</label>
+                        <input type="date" name="dateTime">
+                    </div>
+
+                    <div class="inputElement">
+                        <label for="rangeSelector" class="title">Rozsah:</label>
+                        <input type="range" name="rangeSelector" id="rangeID" min="1" max="10">
+                        <output name="x" for="rangeID"></output>
+                    </div>
+
+                    <div class="inputElement">
+                        <label for="browsers" class="title">Datalist:</label>
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </div>
+
+                    <div class="inputElement">
+                        <input type="submit" value="Odeslat"
                                id="submit" />
                     </div>
+                    a další...
+
 
                 </form>
             </article>
+
+
+
         </section>
 
         <footer>
