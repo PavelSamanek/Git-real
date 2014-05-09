@@ -3,32 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Title of the document</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </head>
 
+
+<!-- Video formáty a jejich podpora u prohlížečů:
+H264: IE a Safari
+WebM: Android, Chrome, Firefox, Opera-->
+<!-- Audio formáty a jejich podpora u prohlížečů:
+Ogg Vorbis: Firefox 3.6, Chrome 6+, Opera 1.5, IE9
+ Mp3: Safari 5+, Chrome 6+, IE9 -->
+
+
+
 <body>
-    <header></header>
+    <div id="container">
+        <header>
+            <h1>Logo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contacts</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Video formáty a jejich podpora u prohlížečů:
-        H264: IE a Safari
-        WebM: Android, Chrome, Firefox, Opera-->
-    <video poster="images/puppy.jpg"
-           width="400"
-           height="320"
-           preload="auto" controls loop>
-        <source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
-        <source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
-    </video>
+        <section class="content">
+            Content
+            <article class="Multimedia">
+                <video poster="images/puppy.jpg"
+                       width="400"
+                       height="320"
+                       preload="auto" controls loop>
+                    <source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+                    <source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+                </video>
+                <audio controls>
+                    <source src="audio/test-audio.ogg" />
+                    <source src="audio/test-audio.mp3" />
+                    Prohlížeč nepodporuje dané audio formáty.
+                </audio>
+                <figure>
+                    <img src="images/image.jpg" alt="Popis obrázku" />
+                    <figcaption>Popis u obrázku, neexistuje ekvivalent v HTML4.</figcaption>
+                </figure>
+            </article>
 
+            <article class="ValidationForm">
+                <form action="http://someserver.com/login.aspx" method="post">
+                    <fieldset>
+                        <legend>Přihlášení</legend>
+                        <label for="username">Uživatelské jméno:</label> <br />
+                        <input type="text" name="username" required="required" /> <br />
+                        <label for="password">Heslo:</label> <br />
+                        <input type="password" required="required" /> <br />
+                        <input type="submit" value="Přihlásit se" />
+                    </fieldset>
+                </form>
+            </article>
 
-    <!-- Audio formáty a jejich podpora u prohlížečů:
-       Ogg Vorbis: Firefox 3.6, Chrome 6+, Opera 1.5, IE9
-        Mp3: Safari 5+, Chrome 6+, IE9 -->
-    <audio controls autoplay>
-        <source src="audio/test-audio.ogg" />
-        <source src="audio/test-audio.mp3" />
-        <p>Prohlížeč nepodporuje dané audio formáty.</p>
-    </audio>
-       
+            <article class="newInputsHTML5">
+                <form action="" method="post">
+                    <div class="inputElement">
+                        <label for="email" class="title">Email:</label>
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="inputElement">
+                        <label for="website" class="title">URL:</label>
+                        <input type="url" name="website" required pattern="https?://.+">
+                    </div>
+                    <div class="inputElement">
+                        <input type="submit" value="Register"
+                               id="submit" />
+                    </div>
+
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            Footer
+        </footer>
+    </div> <!-- #container END -->
+
 
 
 </body>

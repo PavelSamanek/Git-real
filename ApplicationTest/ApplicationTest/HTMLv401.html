@@ -3,6 +3,7 @@
 
 <head>
     <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
     <title>Ukázka HTML verze 4.01</title>
     <!-- SWFObject objekt pro přidání flash BEGIN-->
     <script type="text/javascript"
@@ -16,14 +17,61 @@
         swfobject.embedSWF("flash/player_mp3_1.0.0.swf", "audio", "200", "20", "8.0.0", flashvars, paramsAudio);
     </script>
     <!-- SWFObject objekt pro přidání flash END-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#formToValidate").validate({
+                rules: {
+                    username: {
+                        required: true
+                    },
+                    password: {
+                        required: true
+                    }
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
-    <div id="header"></div>
+    <div id="container">
+        <div id="header">
+            <h1>Logo</h1>
+            <div id="navigation">
+                <ul>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            Content
+            <div id="Multimedia">
+                <div id="video">Video</div>
+                <div id="audio">Audio</div>
+                <img src="images/image.jpg" alt="Popis.." />
+            </div>
+            <div id="ValidationForms">
+                <form id="formToValidate" action="http://someserver.com/login.aspx" method="post">
+                    <fieldset>
+                        <legend>Přihlášení</legend>
+                        <label for="username">Uživatelské jméno:</label> <br />
+                        <input type="text" name="username" /> <br />
+                        <label for="password">Heslo:</label> <br />
+                        <input type="password" name="password"/><br />
+                        <input type="submit" value="Přihlásit se" />
+                    </fieldset>
+                </form>
+            </div> <!-- #ValidationForms END -->
+        </div> <!-- #content END -->
 
-    <div id="video">Video</div>
-    <div id="audio">Audio</div>
-
-
-
+        <div id="footer">
+            Footer
+        </div>    <!-- #container END -->
+    </div>
 </body>
 </html>

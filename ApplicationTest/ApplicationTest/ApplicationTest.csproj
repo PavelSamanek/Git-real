@@ -21,6 +21,7 @@
     <Content Include="HTMLv401.html" />
     <Content Include="HTMLv5.html" />
     <Content Include="index.html" />
+    <Content Include="Styles.css" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>

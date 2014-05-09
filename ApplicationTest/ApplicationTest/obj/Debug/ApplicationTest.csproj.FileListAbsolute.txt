@@ -4,3 +4,9 @@ c:\users\psamanek\documents\visual studio 2013\Projects\ApplicationTest\Applicat
 c:\users\psamanek\documents\visual studio 2013\Projects\ApplicationTest\ApplicationTest\obj\Debug\ApplicationTest.csprojResolveAssemblyReference.cache
 c:\users\psamanek\documents\visual studio 2013\Projects\ApplicationTest\ApplicationTest\obj\Debug\ApplicationTest.dll
 c:\users\psamanek\documents\visual studio 2013\Projects\ApplicationTest\ApplicationTest\obj\Debug\ApplicationTest.pdb
+C:\Users\psamanek\store\ApplicationTest\ApplicationTest\bin\ApplicationTest.dll.config
+C:\Users\psamanek\store\ApplicationTest\ApplicationTest\bin\ApplicationTest.dll
+C:\Users\psamanek\store\ApplicationTest\ApplicationTest\bin\ApplicationTest.pdb
+C:\Users\psamanek\store\ApplicationTest\ApplicationTest\obj\Debug\ApplicationTest.csprojResolveAssemblyReference.cache
+C:\Users\psamanek\store\ApplicationTest\ApplicationTest\obj\Debug\ApplicationTest.dll
+C:\Users\psamanek\store\ApplicationTest\ApplicationTest\obj\Debug\ApplicationTest.pdb
